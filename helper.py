@@ -1,8 +1,8 @@
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
-from IPython.core.display import display, HTML
-
+from IPython.display import display
+#from IPython.core.display import display
 def data_from_url(url):
     df = pd.read_html(url)[1]
     lol = df.to_numpy().tolist()
